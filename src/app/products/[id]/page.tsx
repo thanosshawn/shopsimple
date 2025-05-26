@@ -45,7 +45,7 @@ export default function ProductDetailsPage() {
     if (!product) return;
     // TODO: Implement add to cart functionality with selected quantity
     console.log('Add to cart:', product.id, 'Quantity:', quantity);
-    alert(\`Added ${quantity} of ${product.name} to cart (mock)\`);
+    alert(`Added ${quantity} of ${product.name} to cart (mock)`);
   };
   
   if (isLoading) {
