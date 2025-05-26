@@ -1,4 +1,6 @@
 
+"use client"; // Add this directive to make it a Client Component
+
 import type { Product } from '@/lib/types';
 import Image from 'next/image';
 import Link from 'next/link';
@@ -14,6 +16,10 @@ export function ProductCard({ product }: ProductCardProps) {
   const handleAddToCart = () => {
     // TODO: Implement add to cart functionality
     console.log('Add to cart:', product.id);
+    // You might want to show a toast notification here
+    // import { useToast } from "@/hooks/use-toast";
+    // const { toast } = useToast();
+    // toast({ title: "Added to cart!", description: `${product.name} has been added to your cart.` });
   };
 
   return (
